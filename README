@@ -1,0 +1,27 @@
+What is this project?
+In this project I've created a tool to visualize demographic dividends of BRIC (Brazil, Russia, India and China) countries. Demographic Dividend[1] is a rise in the rate of economic growth due to a rising share of working age people in a population. It is argued that this theory brings economic miracles and can be supported by examples like East Asian Tigers[2] or Celtic Tiger[3] during 80s and 90s. I was interested in looking at the demographic dividend over the period of next 40 years of BRIC countries that are heralded as the future economic superpowers.
+
+What is the source of data for this project?
+United Nations Data repository (data.un.org) have population forecast for every country in the world till 2050. To calculate demographic dividend, we have to calculate dependency ratio, which is an age-population ratio of those typically not in the labor force (the dependent part) and those typically in the labor force (the productive part)[4]. Dependency ratio and demographic dividend are inversely proportional. To simplify things I chose inverse dependency ratio (to display in these graphs) since it has direct relationship with the demographic dividend. Inverse dependency ratio can be calculated by simple formula: number of people aged 15 - 64 divided by number of above and below 15 - 64 years. If inverse dependency ratio is 2.0, it means for every one dependent (those who don't work) there are 2 working people (colloquially known as feeding members of family).
+
+What is the significance of UI elements in this project?
+I realized a simple line graph would best represent the demographic dividend changes from 2010 - 2050 for BRIC countries. User can view the demographic dividend for any of the BRIC countries by selecting them individually. User can also compare the demographic dividends of BRIC countries by selecting two or more countries to display their respective charts.
+
+Demographic dividends of all 4 countries are shown by default. User can select/deselect any country from configuration panel on the left. Instead of using checkboxes (I find them ugly) I wanted to use a concept of switches, which are widely used in everyday objects of our life. "Switch" UI control have become popular on interfaces of smartphones (especially iOS devices). Users slide these light button style switches to turn something on or off. Given the purpose of checkboxes precisely the same, it made perfect sense to have something similar in the configuration panel.
+
+What external packages are used in this project?
+I chose Highcharts[5], which is a javascript based library for interactive visualizations. I liked the simplicity of this library. As discussed before, I wanted to implement light switch style interface for checkboxes. I was looking to create something similar using jQuery but discovered the wonderful lightswitch jQuery plugin[6], which solved checkboxes problem for me.
+
+What's next?
+I want to create similar visualization for all the countries in the world. So I'm hoping to work on this in the future.
+
+Where can I find the demo of this tool?
+http://bit.ly/a3-dhawal
+
+References:
+[1] http://en.wikipedia.org/wiki/Demographic_dividend
+[2] http://en.wikipedia.org/wiki/East_Asian_Tigers
+[3] http://en.wikipedia.org/wiki/Celtic_tiger
+[4] http://en.wikipedia.org/wiki/Dependency_ratio
+[5] http://www.highcharts.com/
+[6] http://www.catchmyfame.com/2010/05/07/new-jquery-lightswitch-plugin/
